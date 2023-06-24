@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap");
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Spectral", serif;
+  font-size: 0.8rem;
+}
+
+nav {
+  background-color: #ffc017;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 8em 1em 8em;
+  border-bottom: 1px solid #191919;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 1em;
+  font-family: "Spectral", sans-serif;
+}
+
+.black {
+  background-color: #191919;
+  color: white;
+  font-weight: 700;
+  border-radius: 99em;
+  border: 1px solid #191919;
+}
+header {
+  font-family: "spectral", sans-serif;
+  background-color: #ffc017;
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid #191919;
+  padding-left: 8em;
+  height: 30em;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+header > p {
+  width: 20em;
+  font-size: 1.4rem;
+}
+#a-lot-m {
+  position: absolute;
+  right: 0;
+  height: 30em;
+}
+
+#reading {
+  display: flex;
+  justify-content: center;
+  width: 14em;
+  font-size: 1rem;
+  padding: 1em 1em;
+}
+
+#trending {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em 8em 1em 8em;
+  border: 1px solid #1919193f;
+}
+
+#trending h2 {
+  display: flex;
+  font-weight: bold;
+  font-size: 1.2rem;
+  align-items: center;
+}
+
+#trending h2 img {
+  height: 2rem;
+  margin-right: 1em;
+}
+
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.card-author {
+  display: flex;
+  width: 30%;
+  font-size: 0.8rem;
+  padding: 1em 0em;
+}
+.number {
+  font-weight: 500;
+  color: rgba(230, 230, 230, 1);
+  font-size: 2rem;
+}
+.author-news {
+  display: flex;
+  flex-direction: column;
+  padding: 0em 0em 1em 1em;
+}
+.author-news > p {
+  font-size: 0.8rem;
+  padding: 0.2em 0em;
+}
+.author-news > div {
+  padding: 0.2em 0em;
+}
+.author-tag {
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem;
+}
+
+.author-tag img {
+  margin-right: 0.3em;
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.author-news p:nth-of-type(1) {
+  font-weight: bold;
+}
+
+#article-aside-container {
+  display: flex;
+  padding: 1em 8em;
+  justify-content: space-between;
+}
+
+#article {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+#article-aside-container aside {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+#category-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 0em 2em 0em;
+  border-bottom: 1px solid #1919193f;
+  gap: 1em;
+  font-size: 0.8rem;
+}
+aside {
+  margin-left: 3em;
+}
+aside h2 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.aside-category {
+  padding: 1em;
+  border: 1px solid #1919193f;
+}
+
+#link-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em 0em;
+  list-style: none;
+  gap: 1em;
+}
+
+.link {
+  font-size: 1rem;
+}
+
+.article-cards {
+  display: flex;
+  height: 134px;
+  align-items: center;
+  margin: 2em 3em 2em 0em;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.article-author-news {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  width: 75%;
+  height: 100%;
+}
+
+.article-img {
+  height: auto;
+  margin: 0em 1em;
+}
+
+.article-img img {
+  width: 200px;
+  height: 134px;
+}
+.article-author-tag {
+  display: flex;
+  align-items: center;
+  margin-right: 0.3em;
+  border-radius: 50%;
+}
+.article-author-tag {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.article-author-tag img {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.3em;
+  border-radius: 50%;
+  border: 1px solid #1919193f;
+}
+
+.article-cards h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.article-cards > p {
+  font-size: 0.8rem;
+  padding: 0.2em 0em;
+}
+
+.article-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1em;
+  font-size: 0.8rem;
+  width: 100%;
+}
+.star {
+  height: 1rem;
+  margin-top: 0.2em;
+}
+
+.article-info {
+  display: flex;
+  align-items: center;
+}
+
+.category {
+  border: 1px solid rgba(242, 242, 242, 1);
+  border-radius: 100px;
+  background-color: rgba(242, 242, 242, 1);
+  padding: 2px 8px;
+}
+
+.star-container {
+  display: flex;
+  align-items: center;
+}
