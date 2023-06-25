@@ -17,3 +17,29 @@ document.addEventListener("scroll", function () {
     navstart.classList.remove("start-scroll");
   }
 });
+
+const allM = document.querySelectorAll("g");
+
+console.log(allM);
+const StopAnimatedM = function () {
+  clearInterval(animatedM);
+};
+
+const animatedM = setInterval(function () {
+  let n = 0;
+  while (n < 50) {
+    let i = Math.floor(Math.random() * 1957);
+    allM[i].classList.add("animated");
+    n += 1;
+    console.log(n);
+  }
+  unanimatedM();
+}, 10000);
+
+const unanimatedM = function () {
+  const mNone = document.querySelectorAll("animated");
+
+  mNone.forEach((e) => {
+    e.classList.remove("animated");
+  });
+};
